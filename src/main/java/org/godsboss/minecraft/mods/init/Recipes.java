@@ -12,6 +12,10 @@ public class Recipes {
     public static final String EMBERS_MODID = "embers";
 
 	public static void init() {
+		initCentrifuge();
+	}
+
+	private static void initCentrifuge() {
 		Item archaicBrick = ForgeRegistries.ITEMS.getValue(new ResourceLocation(EMBERS_MODID + ":archaic_brick"));
 		Item ancientMotiveCore = ForgeRegistries.ITEMS.getValue(new ResourceLocation(EMBERS_MODID + ":ancient_motive_core"));
 
