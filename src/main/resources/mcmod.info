@@ -1,7 +1,7 @@
 [
 {
-  "modid": "thermalexpansionplusembers",
-  "name": "Thermal Expansion plus Embers",
+  "modid": "compatthermalembers",
+  "name": "Compatibility Thermal Expansion and Embers",
   "description": "Adds some integration between Thermal Expansion and Embers / Embers Rekindled.",
   "version": "${version}",
   "mcversion": "${mcversion}",

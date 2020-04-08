@@ -9,14 +9,14 @@ import org.apache.logging.log4j.Logger;
 import org.godsboss.minecraft.mods.init.Recipes;
 
 @Mod(
-	modid = ThermalExpansionPlusEmbersMod.MODID,
-	name = ThermalExpansionPlusEmbersMod.NAME,
-	version = ThermalExpansionPlusEmbersMod.VERSION
+	modid = CompatThermalEmbers.MODID,
+	name = CompatThermalEmbers.NAME,
+	version = CompatThermalEmbers.VERSION
 )
-public class ThermalExpansionPlusEmbersMod
+public class CompatThermalEmbers
 {
-    public static final String MODID = "thermalexpansionplusembers";
-    public static final String NAME = "Thermal Expansion plus Embers";
+    public static final String MODID = "compatthermalembers";
+    public static final String NAME = "Compatibility Thermal Expansion and Embers";
     public static final String VERSION = "1.0.0";
 
     public static Logger logger;
