@@ -42,7 +42,7 @@ public class Recipes {
 		ItemStack sand = new ItemStack(Blocks.SAND);
 
 		// Some materials can be disabled via config. Instead of checking the config,
-		// we just if the corresponding items exist. If they do, add the recipe, else
+		// we just check if the corresponding items exist. If they do, add the recipe, else
 		// skip it.
 		String[] materials = {
 			"copper",
