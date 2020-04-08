@@ -11,7 +11,8 @@ import org.godsboss.minecraft.mods.init.Recipes;
 @Mod(
 	modid = CompatThermalEmbers.MODID,
 	name = CompatThermalEmbers.NAME,
-	version = CompatThermalEmbers.VERSION
+	version = CompatThermalEmbers.VERSION,
+	dependencies = "required-after:thermalexpansion"
 )
 public class CompatThermalEmbers
 {
