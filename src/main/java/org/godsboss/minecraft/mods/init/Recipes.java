@@ -16,14 +16,25 @@ public class Recipes {
     public static final String EMBERS_MODID = "embers";
 
 	public static void init(Logger logger) {
-		initCentrifuge();
+		initCentrifuge(logger);
 		initRecycling(logger);
 	}
 
-	private static void initCentrifuge() {
+	private static void initCentrifuge(Logger logger) {
+		String archaicBrickID = EMBERS_MODID + ":archaic_brick";
+		String ancientMotiveCoreID = EMBERS_MODID + ":ancient_motive_core";
 		Item archaicBrick = ForgeRegistries.ITEMS.getValue(new ResourceLocation(EMBERS_MODID + ":archaic_brick"));
 		Item ancientMotiveCore = ForgeRegistries.ITEMS.getValue(new ResourceLocation(EMBERS_MODID + ":ancient_motive_core"));
 
+		if (archaicBrick == null) {
+			logger.debug("{} not found, skip processing Ancient Golem", archaicBrickID);
+		}
+		if (ancientMotiveCore == null) {
+			logger.debug("{} not found, skip processing Ancient Golem", ancientMotiveCoreID);
+		}
+		if (archaicBrick == null || ancientMotiveCore == null) {
+			return;
+		}
 		CentrifugeManager.addDefaultMobRecipe(
 				EMBERS_MODID + ":ancient_golem",
 				asList(
